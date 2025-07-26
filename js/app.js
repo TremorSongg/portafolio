@@ -35,6 +35,18 @@ document.addEventListener('DOMContentLoaded', () => {
     themeToggle.setAttribute('aria-label', 'Cambiar a modo claro');
   }
 
+  const footer = document.querySelector('footer');
+
+if (footer) {
+  if (mode === 'light') {
+    footer.classList.remove('is-dark');
+    footer.classList.add('is-light');
+  } else {
+    footer.classList.remove('is-light');
+    footer.classList.add('is-dark');
+  }
+}
+
   sunIcon.classList.toggle('is-hidden', mode === 'light');
   moonIcon.classList.toggle('is-hidden', mode !== 'light');
 }

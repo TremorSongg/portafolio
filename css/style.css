@@ -297,6 +297,12 @@ footer {
   text-align: center;
 }
 
+.light-mode footer {
+  background-color: #f0f0f0;
+  color: #212529;
+  border-top: 4px solid #b0b0b0;
+}
+
 /* ==================== UTILIDADES ==================== */
 .is-hidden {
   display: none !important;

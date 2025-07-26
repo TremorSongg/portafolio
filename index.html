@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Portafolio 8-Bit - Tremor</title>
+
+    <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <header class="nes-container is-dark header-wrapper">
+        <div class="header-img-container">
+            <img id="logo-fondo" src="images/dia-banner.png" alt="Logo Tremor" class="logo-placeholder" />
+            <div class="header-text">
+                <h1 class="nes-text is-primary">Tremor.dev</h1>
+                <p>Portafolio estilo 8-bit</p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav-buttons nes-container is-dark">
+        <button class="nes-btn is-primary" onclick="cargarSeccion('inicio')">Inicio</button>
+        <button class="nes-btn is-success" onclick="cargarSeccion('habilidades')">Habilidades</button>
+        <button class="nes-btn is-warning" onclick="cargarSeccion('proyectos')">Proyectos</button>
+        <button class="nes-btn is-error" onclick="cargarSeccion('contacto')">Contacto</button>
+        <button id="theme-toggle" type="button" class="nes-btn is-dark theme-toggle-btn" aria-label="Cambiar tema">
+  <i class="nes-icon star is-small sun-icon"></i> 
+  <i class="nes-icon star is-empty is-small moon-icon is-hidden"></i> 
+</button>
+    </nav>
+
+    <main id="contenido" class="main-content"></main>
+
+    <footer class="nes-container is-dark">
+        
+  <button id="music-toggle" class="nes-btn is-success music-toggle-btn">🎵 Música: OFF</button>
+  <input type="range" id="volume-control" min="0" max="1" step="0.01" value="0.5" class="nes-range" />
+
+        <p>👾 Insert coin to continue... | © 2025 <img id="logo_tremor" src="images/logo_tremor.gif"></p>
+    </footer>
+        <script src="https://www.youtube.com/iframe_api"></script>
+        <script src="js/app.js"></script>
+    <audio id="bg-music" loop>
+  <source src="assets/audio/theme.mp3" type="audio/mpeg">
+  Tu navegador no soporta audio HTML5.
+</audio>
+
+
+</body>
+</html>

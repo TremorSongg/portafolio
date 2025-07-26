@@ -1,128 +1,128 @@
 /* ==================== RESET Y BASE ==================== */
 body {
-  margin: 0;
-  font-family: 'Press Start 2P', cursive;
-  background-color: #212529;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 0;
+    font-family: 'Press Start 2P', cursive;
+    background-color: #212529;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 body.light-mode {
-  background-color: #f0f0f0;
-  color: #212529 !important;
+    background-color: #f0f0f0;
+    color: #212529 !important;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 /* ==================== CONTENEDORES ==================== */
 .header-wrapper {
-  position: relative;
-  height: 320px;
-  overflow: hidden;
+    position: relative;
+    height: 320px;
+    overflow: hidden;
 }
 
 .header-img-container {
-  position: absolute;
-  height: 100%;
-  width: 100%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
 }
 
 .logo-placeholder {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  image-rendering: pixelated;
-  background-color: #333;
-  display: block;
-  border-radius: 0%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    image-rendering: pixelated;
+    background-color: #333;
+    display: block;
+    border-radius: 0%;
 }
 
 .header-text {
-  position: absolute;
-  top: 12rem;
-  right: 1.5rem;
-  text-align: right;
-  color: white;
-  text-shadow: 2px 2px 0 #000;
-  background-color: rgba(0, 0, 0, 0.0);
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  z-index: 10;
+    position: absolute;
+    top: 12rem;
+    right: 1.5rem;
+    text-align: right;
+    color: white;
+    text-shadow: 2px 2px 0 #000;
+    background-color: rgba(0, 0, 0, 0.0);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    z-index: 10;
 }
 
 body.light-mode .header-text,
 body.light-mode .header-text p {
-  color: #f6f7f8 !important;
-  background-color: rgba(0, 0, 0, 0.0) !important;
-  text-shadow: none !important;
+    color: #f6f7f8 !important;
+    background-color: rgba(0, 0, 0, 0.0) !important;
+    text-shadow: none !important;
 }
 
 body.light-mode .header-text h1.nes-text.is-primary {
-  color: #e8f166 !important;
+    color: #e8f166 !important;
 }
 
 .container {
-  display: flex;
-  flex: 1;
+    display: flex;
+    flex: 1;
 }
 
 .main {
-  flex: 1;
-  padding: 2rem;
+    flex: 1;
+    padding: 2rem;
 }
 
 .main-content {
-  padding: 2rem;
-  flex: 1;
+    padding: 2rem;
+    flex: 1;
 }
 
 .section {
-  margin-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
 /* ==================== NAV ==================== */
 .nav-buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 6rem;
-  padding: 1rem;
-  border-bottom: 4px solid #444;
-  flex-wrap: wrap;
-  position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    padding: 1rem;
+    border-bottom: 4px solid #444;
+    flex-wrap: wrap;
+    position: relative;
 }
 
 .nav-buttons .nes-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex: 0 0 auto;
-  width: 250px;
-  height: 50px;
-  padding: 0.5rem 1rem;
-  white-space: nowrap;
-  text-align: center;
-  box-sizing: border-box;
-  line-height: normal;
-  margin: 0;
-  font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    width: 250px;
+    height: 50px;
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+    text-align: center;
+    box-sizing: border-box;
+    line-height: normal;
+    margin: 0;
+    font-size: 1rem;
 }
 
 .nav-buttons .nes-btn.is-active {
-  box-shadow: none !important;
-  border: 4px solid #f7d51d;
+    box-shadow: none !important;
+    border: 4px solid #f7d51d;
 }
 
 /* ==================== TEMA CLARO (extra NES) ==================== */
 body.light-mode .nes-container.is-dark {
-  background-color: #e0e0e0 !important;
-  border-color: #b0b0b0 !important;
-  box-shadow: inset -6px -6px #c0c0c0 !important;
+    background-color: #e0e0e0 !important;
+    border-color: #b0b0b0 !important;
+    box-shadow: inset -6px -6px #c0c0c0 !important;
 }
 
 body.light-mode .nes-text.is-primary { color: #d94848 !important; }
@@ -132,7 +132,7 @@ body.light-mode .nes-text.is-error   { color: #c62828 !important; }
 
 body.light-mode .nes-input,
 body.light-mode .nes-textarea {
-  color: #212529 !important;
+    color: #212529 !important;
 }
 
 body.light-mode .main-content p,
@@ -140,275 +140,548 @@ body.light-mode .main-content span,
 body.light-mode .main-content div,
 body.light-mode .main-content li,
 body.light-mode .main-content a {
-  color: #212529 !important;
+    color: #212529 !important;
 }
 
 body.light-mode .nes-container.with-title > .title {
-  color: #212529 !important;
-  background-color: #e0e0e0 !important;
-  position: absolute !important;
-  top: 1.3rem !important;
-  left: 2rem !important;
-  padding: 0 0.5rem !important;
-  line-height: 1.9rem !important;
+    color: #212529 !important;
+    background-color: #e0e0e0 !important;
+    position: absolute !important;
+    top: 1.3rem !important;
+    left: 2rem !important;
+    padding: 0 0.5rem !important;
+    line-height: 1.9rem !important;
 }
 
 body.light-mode .nes-container.with-title::before {
-  background-color: #f0f0f0 !important;
-  border-color: #b0b0b0 !important;
-  position: absolute !important;
-  top: 2rem !important;
-  left: 0.5rem !important;
-  padding: 1rem;
-  height: auto !important;
+    background-color: #f0f0f0 !important;
+    border-color: #b0b0b0 !important;
+    position: absolute !important;
+    top: 2rem !important;
+    left: 0.5rem !important;
+    padding: 1rem;
+    height: auto !important;
 }
 
 /* ==================== BOTÓN DE TEMA (SOL / LUNA) ==================== */
 #theme-toggle.theme-toggle-btn {
-  position: absolute;
-  right: 1rem;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 48px;
-  height: 48px;
-  padding: 0;
-  border-radius: 4px;
-  background-color: #787878;
-  border: 4px solid #505050;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  box-shadow: inset -4px -4px #404040, inset 4px 4px #a0a0a0;
-  transition: all 0.1s ease-out;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    border-radius: 4px;
+    background-color: #787878;
+    border: 4px solid #505050;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: inset -4px -4px #404040, inset 4px 4px #a0a0a0;
+    transition: all 0.1s ease-out;
 }
 
 #theme-toggle.theme-toggle-btn:hover {
-  background-color: #909090;
-  border-color: #707070;
+    background-color: #909090;
+    border-color: #707070;
 }
 
 #theme-toggle.theme-toggle-btn:active {
-  box-shadow: inset 4px 4px #404040, inset -4px -4px #a0a0a0 !important;
-  transform: translateY(-50%) translateX(2px);
+    box-shadow: inset 4px 4px #404040, inset -4px -4px #a0a0a0 !important;
+    transform: translateY(-50%) translateX(2px);
 }
 
+/* Estilos para los iconos de sol y luna dentro de los botones de tema */
 .sun-icon,
 .moon-icon {
-  line-height: 1;
+    line-height: 1;
 }
 
-body.light-mode #theme-toggle .sun-icon {
-  display: none;
+/* Control de visibilidad de los iconos de sol y luna para el botón principal */
+body.light-mode #theme-toggle .sun-icon,
+body.light-mode #theme-toggle-sidebar .sun-icon {
+    display: none;
 }
 
-body.light-mode #theme-toggle .moon-icon {
-  display: block;
+body.light-mode #theme-toggle .moon-icon,
+body.light-mode #theme-toggle-sidebar .moon-icon {
+    display: block;
 }
 
-body:not(.light-mode) #theme-toggle .moon-icon {
-  display: none;
+body:not(.light-mode) #theme-toggle .moon-icon,
+body:not(.light-mode) #theme-toggle-sidebar .moon-icon {
+    display: none;
 }
 
-body:not(.light-mode) #theme-toggle .sun-icon {
-  display: block;
+body:not(.light-mode) #theme-toggle .sun-icon,
+body:not(.light-mode) #theme-toggle-sidebar .sun-icon {
+    display: block;
 }
 
 /* ==================== CARRUSEL ==================== */
 .carousel-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  overflow: hidden;
-  margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    overflow: hidden;
+    margin-top: 1rem;
 }
 
 .carousel-track {
-  display: flex;
-  gap: 1rem;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  max-width: 100%;
-  padding: 1rem 0;
-  scrollbar-width: thin;
-  scrollbar-color: #209cee #1c1c1c;
-  -webkit-overflow-scrolling: touch;
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    max-width: 100%;
+    padding: 1rem 0;
+    scrollbar-width: thin;
+    scrollbar-color: #209cee #1c1c1c;
+    -webkit-overflow-scrolling: touch;
 }
 
 .carousel-track::-webkit-scrollbar {
-  height: 8px;
+    height: 8px;
 }
 
 .carousel-track::-webkit-scrollbar-track {
-  background: #1c1c1c;
+    background: #1c1c1c;
 }
 
 .carousel-track::-webkit-scrollbar-thumb {
-  background-color: #209cee;
-  border-radius: 4px;
-  border: 2px solid #1c1c1c;
+    background-color: #209cee;
+    border-radius: 4px;
+    border: 2px solid #1c1c1c;
 }
 
 .carousel-item {
-  flex: 0 0 auto;
-  background-color: #1c1c1c;
-  border: 4px solid #fff;
-  padding: 0.5rem;
-  border-radius: 8px;
+    flex: 0 0 auto;
+    background-color: #1c1c1c;
+    border: 4px solid #fff;
+    padding: 0.5rem;
+    border-radius: 8px;
 }
 
 .nav-arrow {
-  width: 40px;
-  height: 40px;
-  padding: 0;
-  font-size: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-  flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-shrink: 0;
 }
 
 /* ==================== ANIMACIONES ==================== */
 .fade-in {
-  opacity: 0;
-  transform: translateY(10px);
-  animation: fadeIn 0.5s ease-out forwards;
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeIn 0.5s ease-out forwards;
 }
 
 @keyframes fadeIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* ==================== FORMULARIOS ==================== */
 form .nes-btn {
-  margin-top: 1rem;
+    margin-top: 1rem;
 }
 
 /* ==================== FOOTER ==================== */
 footer {
-  background-color: #111;
-  border-top: 4px solid #444;
-  padding: 1rem;
-  text-align: center;
+    background-color: #111;
+    border-top: 4px solid #444;
+    padding: 1rem;
+    text-align: center;
+    margin-top: auto; /* Permite que el footer se pegue al final */
 }
 
 .light-mode footer {
-  background-color: #f0f0f0;
-  color: #212529;
-  border-top: 4px solid #b0b0b0;
+    background-color: #f0f0f0;
+    color: #212529;
+    border-top: 4px solid #b0b0b0;
 }
 
 /* ==================== UTILIDADES ==================== */
 .is-hidden {
-  display: none !important;
+    display: none !important;
 }
 
 header.nes-container {
-  padding: 0 !important;
+    padding: 0 !important;
 }
 
 .logo-placeholder {
-  transition: opacity 0.5s ease;
-  opacity: 1;
+    transition: opacity 0.5s ease;
+    opacity: 1;
 }
 
 .logo-placeholder.fade-out {
-  opacity: 0;
+    opacity: 0;
 }
 
 .logo-placeholder {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: opacity 0.5s ease-in-out;
-  z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 1;
 }
 
 .logo-claro {
-  opacity: 0;
-  z-index: 1;
+    opacity: 0;
+    z-index: 1;
 }
 
 body.light-mode .logo-claro {
-  opacity: 1;
-  z-index: 2;
+    opacity: 1;
+    z-index: 2;
 }
 
 body.light-mode .logo-oscuro {
-  opacity: 0;
-  z-index: 1;
+    opacity: 0;
+    z-index: 1;
 }
 
 .logo-oscuro {
-  opacity: 1;
-  z-index: 2;
+    opacity: 1;
+    z-index: 2;
 }
 
 .social-icons {
-  display: flex;
-  flex-direction: row; /* importante para que sea horizontal */
-  justify-content: center;
-  align-items: center;
-  gap: 64px; /* separa los íconos entre sí */
-  margin-top: 20px;
+    display: flex;
+    flex-direction: row; /* importante para que sea horizontal */
+    justify-content: center;
+    align-items: center;
+    gap: 64px; /* separa los íconos entre sí */
+    margin-top: 20px;
 }
 
 .social-icons a {
-  font-size: 3rem; /* o lo que necesites */
-  color: #fff;
-  transition: transform 0.3s ease, color 0.3s ease;
+    font-size: 3rem; /* o lo que necesites */
+    color: #fff;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .social-icons a:hover {
-  transform: scale(1.2);
-  color: #ffd700; /* por ejemplo, un dorado al hacer hover */
+    transform: scale(1.2);
+    color: #ffd700; /* por ejemplo, un dorado al hacer hover */
 }
 
 .habilidades-wrapper {
-  display: flex;
-  gap: 2rem;
-  margin-top: 1rem;
-  flex-wrap: wrap;
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
 }
 
 .sidebar {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  min-width: 240px;
-  flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 240px;
+    flex-shrink: 0;
 }
 
 .habilidad-info {
-  flex: 1;
-  padding: 1rem;
-  min-height: 200px;
+    flex: 1;
+    padding: 1rem;
+    min-height: 200px;
 }
 
 .habilidad-btn {
-  text-align: left;
-  font-size: 0.9rem;
+    text-align: left;
+    font-size: 0.9rem;
 }
 
 .music-controls {
-  position: fixed;
-  bottom: 1rem;
-  right: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  z-index: 999;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    z-index: 999;
 }
 
 #volume-control {
-  width: 100px;
+    width: 100px;
 }
 
+/* --- Nuevos estilos para Responsive --- */
+
+/* Botón de Hamburguesa */
+#hamburger-menu {
+    display: none; /* Oculto por defecto en desktop */
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1000; /* Asegura que esté por encima de todo */
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    background-color: #209cee; /* Color NES azul */
+    border: 4px solid #1a719c;
+    box-shadow: inset -4px -4px #145e85, inset 4px 4px #26c7ff;
+    transition: all 0.1s ease-out;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#hamburger-menu span {
+    display: block;
+    width: 70%;
+    height: 4px;
+    background-color: white;
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+#hamburger-menu.is-active span:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+
+#hamburger-menu.is-active span:nth-child(2) {
+    opacity: 0;
+}
+
+#hamburger-menu.is-active span:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+
+/* Sidebar */
+#mobile-sidebar {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Oculto por defecto, fuera de la pantalla */
+    width: 280px; /* Ancho de la sidebar */
+    height: 100%;
+    background-color: #212529; /* Fondo oscuro NES */
+    border-left: 4px solid #444;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    z-index: 999; /* Por debajo del botón de hamburguesa pero por encima del contenido */
+    transition: right 0.3s ease-out;
+    box-sizing: border-box;
+}
+
+#mobile-sidebar.is-open {
+    right: 0; /* Muestra la sidebar */
+}
+
+#mobile-sidebar .nes-btn {
+    width: 100%; /* Botones de ancho completo */
+    height: 50px;
+    font-size: 1rem;
+    justify-content: center; /* Centrar el texto en los botones */
+    margin-bottom: 0.5rem; /* Espaciado entre botones */
+}
+
+#theme-toggle-sidebar {
+    position: static; /* Ajusta la posición dentro de la sidebar */
+    transform: none;
+    margin-top: 1rem; /* Espacio extra para el botón de tema */
+}
+
+/* Overlay */
+.sidebar-overlay {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente oscuro */
+    z-index: 998; /* Por debajo de la sidebar */
+    transition: opacity 0.3s ease-out;
+    opacity: 0;
+}
+
+.sidebar-overlay.is-visible {
+    display: block;
+    opacity: 1;
+}
+
+/* MEDIA QUERIES para Responsive */
+@media (max-width: 768px) {
+    .nav-buttons {
+        display: none; /* Oculta la barra de navegación principal en móviles */
+    }
+
+    #hamburger-menu {
+        display: flex; /* Muestra el botón de hamburguesa */
+    }
+
+    .header-text {
+        top: 8rem; /* Ajusta posición del texto en el header */
+        right: 1rem;
+        left: 1rem;
+        text-align: center; /* Centra el texto del header */
+    }
+
+    .main-content {
+        padding: 1rem; /* Reduce el padding del contenido principal */
+    }
+
+    /* Centrar textos del body */
+    .main-content p,
+    .main-content h3 {
+        text-align: center;
+    }
+
+    .nes-container.with-title > .title {
+        position: static !important; /* Resetea la posición absoluta del título del contenedor */
+        text-align: center;
+        background-color: transparent !important;
+        padding: 0 !important;
+        line-height: normal !important;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    body.light-mode .nes-container.with-title > .title {
+        background-color: #e0e0e0 !important; /* Mantiene el color de fondo para light mode */
+    }
+
+
+    .nes-container.with-title::before {
+        display: none; /* Oculta el pseudo-elemento del título para simplificar */
+    }
+
+    .habilidades-wrapper {
+        flex-direction: column; /* Apila las habilidades y la información */
+        align-items: center;
+    }
+
+    .sidebar {
+        width: 100%; /* Sidebar de habilidades al 100% de ancho */
+        min-width: unset;
+    }
+
+    .habilidad-info {
+        width: 100%; /* Información de habilidad al 100% de ancho */
+        text-align: center; /* Centra el texto de la habilidad */
+    }
+
+    .social-icons {
+        flex-direction: row; /* Asegura que los íconos sociales sigan siendo horizontales */
+        flex-wrap: wrap; /* Permite que los íconos se envuelvan si hay muchos */
+        justify-content: center;
+        gap: 32px; /* Reduce el espacio entre íconos en móviles */
+    }
+
+    /* Ajustes para los iframes de YouTube en proyectos */
+    .carousel-item iframe {
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9; /* Mantiene la proporción 16:9 */
+    }
+
+    .carousel-container {
+        flex-direction: column; /* Apila los botones de navegación del carrusel y el carrusel en sí */
+    }
+
+    .nav-arrow {
+        width: 80px; /* Botones de navegación del carrusel más grandes */
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-text h1 {
+        font-size: 1.5rem; /* Reduce el tamaño del título en pantallas muy pequeñas */
+    }
+    .header-text p {
+        font-size: 0.8rem;
+    }
+    .music-controls {
+        flex-direction: column;
+        bottom: 0.5rem;
+        right: 0.5rem;
+        gap: 0.5rem;
+    }
+    #volume-control {
+        width: 80px;
+    }
+}
+
+
+.theme-toggle-fixed-container {
+    position: absolute; /* O 'fixed' si quieres que se desplace con el scroll */
+    top: 280px; /* Ajusta según sea necesario para que quede debajo del header */
+    right: 1px; /* O a la izquierda, según prefieras */
+    z-index: 999; /* Asegura que esté por encima de otros elementos */
+}
+
+@media screen and (min-width: 769px) {
+  .theme-toggle-fixed-container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1, h2, h3 {
+    font-size: 0.6rem; /* Ajusta según necesidad */
+    text-align: center;
+    line-height: 1.4;
+  }
+
+  .nes-container {
+    padding: 2.2rem;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+  }
+
+  .header-text h1 {
+    font-size: 1rem;
+  }
+
+  .header-text p {
+    font-size: 0.75rem;
+  }
+
+  #contenido {
+    padding: -3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header-text {
+    margin-top: 6rem; /* Baja el texto */
+    margin-right: 4rem; /* Ajusta el margen izquierdo */
+  }
+
+  .header-text h1 {
+    font-size: 1rem; /* Opcional: más compacto */
+  }
+
+  .header-text p {
+    font-size: 0.75rem; /* Opcional: más compacto */
+  }
+
+  
+}

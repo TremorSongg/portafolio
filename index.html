@@ -23,33 +23,51 @@
         </div>
     </header>
 
+    <div class="theme-toggle-fixed-container">
+        <button id="theme-toggle" type="button" class="nes-btn is-dark theme-toggle-btn" aria-label="Cambiar tema">
+            <i class="nes-icon star is-small sun-icon"></i>
+            <i class="nes-icon star is-empty is-small moon-icon is-hidden"></i>
+        </button>
+    </div>
+    <button id="hamburger-menu" type="button" class="nes-btn is-primary">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <aside id="mobile-sidebar" class="nes-container is-dark">
+        <button class="nes-btn is-primary" onclick="cargarSeccion('inicio'); toggleSidebar();">Inicio</button>
+        <button class="nes-btn is-success" onclick="cargarSeccion('habilidades'); toggleSidebar();">Habilidades</button>
+        <button class="nes-btn is-warning" onclick="cargarSeccion('proyectos'); toggleSidebar();">Proyectos</button>
+        <button class="nes-btn is-error" onclick="cargarSeccion('contacto'); toggleSidebar();">Contacto</button>
+    </aside>
+
+    <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
     <nav class="nav-buttons nes-container is-dark">
         <button class="nes-btn is-primary" onclick="cargarSeccion('inicio')">Inicio</button>
         <button class="nes-btn is-success" onclick="cargarSeccion('habilidades')">Habilidades</button>
         <button class="nes-btn is-warning" onclick="cargarSeccion('proyectos')">Proyectos</button>
         <button class="nes-btn is-error" onclick="cargarSeccion('contacto')">Contacto</button>
-        <button id="theme-toggle" type="button" class="nes-btn is-dark theme-toggle-btn" aria-label="Cambiar tema">
-  <i class="nes-icon star is-small sun-icon"></i> 
-  <i class="nes-icon star is-empty is-small moon-icon is-hidden"></i> 
-</button>
+        <button id="theme-toggle-desktop" type="button" class="nes-btn is-dark theme-toggle-btn" aria-label="Cambiar tema">
+            <i class="nes-icon star is-small sun-icon"></i>
+            <i class="nes-icon star is-empty is-small moon-icon is-hidden"></i>
+        </button>
     </nav>
 
     <main id="contenido" class="main-content"></main>
 
     <footer class="nes-container is-dark">
-        
-  <button id="music-toggle" class="nes-btn is-success music-toggle-btn">🎵 Música: OFF</button>
-  <input type="range" id="volume-control" min="0" max="1" step="0.01" value="0.5" class="nes-range" />
-
+        <button id="music-toggle" class="nes-btn is-success music-toggle-btn">🎵 Música: OFF</button>
+        <input type="range" id="volume-control" min="0" max="1" step="0.01" value="0.5" class="nes-range" />
         <p>👾 Insert coin to continue... | © 2025 <img id="logo_tremor" src="images/logo_tremor.gif"></p>
     </footer>
-        <script src="https://www.youtube.com/iframe_api"></script>
-        <script src="js/app.js"></script>
+    <script src="http://googleusercontent.com/youtube.com/api/iframe_api"></script>
+    <script src="js/app.js"></script>
     <audio id="bg-music" loop>
-  <source src="assets/audio/theme.mp3" type="audio/mpeg">
-  Tu navegador no soporta audio HTML5.
-</audio>
-
+        <source src="assets/audio/theme.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio HTML5.
+    </audio>
 
 </body>
 </html>

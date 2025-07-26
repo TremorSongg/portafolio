@@ -225,13 +225,13 @@ document.addEventListener('DOMContentLoaded', () => {
               </form>
               <div id="form-feedback" class="form-feedback nes-container is-rounded mt-4">
                 <div class="social-icons">
-                  <a href="https://www.linkedin.com/in/tremor" target="_blank" aria-label="LinkedIn">
+                  <a href="https://www.linkedin.com/in/pablo-rivera-560923149/" target="_blank" aria-label="LinkedIn">
                     <i class="nes-icon linkedin is-medium"></i>
                   </a>
-                  <a href="https://wa.me/56912345678" target="_blank" aria-label="WhatsApp">
+                  <a href="https://wa.me/56935116729" target="_blank" aria-label="WhatsApp">
                     <i class="nes-icon whatsapp is-medium"></i>
                   </a>
-                  <a href="mailto:tremor@example.com" target="_blank" aria-label="Correo">
+                  <a href="mailto:tremorsong86@gmail.com" target="_blank" aria-label="Correo">
                     <i class="nes-icon gmail is-medium"></i>
                   </a>
                   <a href="https://github.com/TremorSongg" target="_blank" aria-label="GitHub">
